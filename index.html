@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dynamic Resume Builder</h1>
+
+    <!-- Form Section -->
+    <div class="form-section">
+      <form id="resumeForm">
+        <h2>Personal Information</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <h2>Education</h2>
+        <label for="degree">Degree</label>
+        <input type="text" id="degree" name="degree" />
+
+        <label for="institution">Institution</label>
+        <input type="text" id="institution" name="institution" />
+
+        <label for="gradYear">Graduation Year</label>
+        <input type="text" id="gradYear" name="gradYear" />
+
+        <button type="button" id="addEducation">Add Education</button>
+
+        <h2>Work Experience</h2>
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" />
+
+        <label for="position">Position</label>
+        <input type="text" id="position" name="position" />
+
+        <label for="years">Years Worked</label>
+        <input type="text" id="years" name="years" />
+
+        <button type="button" id="addExperience">Add Experience</button>
+
+        <h2>Skills</h2>
+        <label for="skill">Skill</label>
+        <input type="text" id="skill" name="skill" />
+
+        <button type="button" id="addSkill">Add Skill</button>
+      </form>
+    </div>
+
+    <!-- Resume Preview Section -->
+    <div class="resume-preview" id="resumePreview">
+      <h2>Preview</h2>
+      <div id="resumeContent">
+        <!-- Resume will be dynamically generated here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
